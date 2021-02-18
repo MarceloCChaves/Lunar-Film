@@ -22,6 +22,7 @@ header .title{
     font-weight: 700;
     font-size: 2rem;
     transition: 0.3s ease-in-out;
+
 }
 header .title:hover{
     opacity: 0.8;
@@ -40,15 +41,20 @@ header .description{
     overflow-x: auto;
 }
 .featured-films h3{
-    color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.25rem;
     margin-top: -4rem;
+    padding: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 5px 5px 15px 5px #000000;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;  
 }
 .slideshow{
     white-space: nowrap;
     width: 100%;
+    padding: 2rem;
 }
 .slideshow figure{
     display: inline-block;
@@ -57,6 +63,7 @@ header .description{
 .slideshow figure img:hover{
     filter:grayscale(100%);
     transition: 1s;
+    box-shadow: 10px 10px 60px #cccccc;
 }
 .catalog-films{
     background: #2C0C36;
