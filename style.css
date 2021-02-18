@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0 7.5rem;
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #e94057,  #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #e94057, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+}
+header .title:hover{
+    opacity: 0.8;
+}
+header .description{
+    color: #fff;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    border-bottom: 2px solid #fff;
+}
+.featured-films{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #c31432, #240b36);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,  #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 7rem 5rem 6rem 0;
+    overflow-x: auto;
+}
+.featured-films h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-top: -4rem;
+}
+.slideshow{
+    white-space: nowrap;
+    width: 100%;
+}
+.slideshow figure{
+    display: inline-block;
+    padding: 5rem 0 0;
+}
+.slideshow figure img:hover{
+    filter:grayscale(100%);
+    transition: 1s;
+}
+.catalog-films{
+    background: #2C0C36;
+}
+.catalog-films .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 3rem 0 5rem;
+}
+.catalog-films .card img{
+    border-radius: 100%;
+}
+.synopsis{
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    width: 40%;
+}
+.synopsis p{
+    margin-top: 2rem;
+}
+.synopsis small + small{
+    display: inline-block;
+    margin: 1rem;
+}
+.synopsis h4{
+    display: inline-block;
+}
+.synopsis span{
+    margin-left: 2rem;
+    background: #0C8F45;
+    padding: 1em;
+    border-radius: 0.25rem;
+}
+footer{
+    background: #23084D;
+    padding: 2rem 0 4rem;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 1024px){
+    .featured-films{
+        padding: 4rem 0 8rem;
+    }
+    h3{
+        font-size: 4rem;
+    }
+}
