@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fbe7d5b7c4.js" crossorigin="anonymous"></script>
@@ -13,22 +14,29 @@
 <body>
     <div class="main-page">
         <header class="header-content">
-            <h2 class="title">Lunar Film</h2>
-            <p class="description">A melhor locadora para o seu filme</p>
+            <div class="logo">
+                <h2 class="title">Lunar Film</h2>
+                <p class="description">A melhor locadora para o seu filme</p>
+            </div>
+            <ul class="navbar">
+                <li class="itemlist"><a href="#">Home</a></li>
+                <li class="itemlist"><a href="#">Movies</a></li>
+                <li class="itemlist"><a href="#">Synopsis</a></li>
+            </ul>
         </header>
         <section class="featured-films">
             <h3>Filmes em destaque</h3>
                 <div class="slideshow">
-                    <figure><img src="./assets/Aladdin.jpg" alt="Aladdin" title="Aladdin e os 40 ladrões"></figure>
-                    <figure><img src="./assets/Life-with-mikey.jpg" alt="Life-with-mikey" title="Life with Mikey"></figure>
-                    <figure><img src="./assets/Pokemon -the-first-movie.jpg" alt="Pokemon" title="Pokemon the first movie"></figure>
-                    <figure><img src="./assets/The-lion-king.jpg" alt="The-lion-king" title="The lion king"></figure>
-                    <figure><img src="./assets/Tiger-the-movie.jpg" alt="Tiger-the-movie" title="Tiger the movie"></figure>
-                    <figure><img src="./assets/Aladdin.jpg" alt="Aladdin" title="Aladdin e os 40 ladrões"></figure>
-                    <figure><img src="./assets/Life-with-mikey.jpg" alt="Life-with-mikey" title="Life with Mikey"></figure>
-                    <figure><img src="./assets/Pokemon -the-first-movie.jpg" alt="Pokemon" title="Pokemon the first movie"></figure>
-                    <figure><img src="./assets/The-lion-king.jpg" alt="The-lion-king" title="The lion king"></figure>
-                    <figure><img src="./assets/Tiger-the-movie.jpg" alt="Tiger-the-movie" title="Tiger the movie"></figure>
+                    <a href="https://pt.wikipedia.org/wiki/Aladdin_and_the_King_of_Thieves"><img src="./assets/Aladdin.jpg" alt="Aladdin" title="Aladdin e os 40 ladrões"></a>
+                    <a href="https://pt.wikipedia.org/wiki/Life_with_Mikey"><img src="./assets/Life-with-mikey.jpg" alt="Life-with-mikey" title="Life with Mikey"></a>
+                    <a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon:_The_First_Movie"><img src="./assets/Pokemon -the-first-movie.jpg" alt="Pokemon" title="Pokemon the first movie"></a>
+                    <a href="https://pt.wikipedia.org/wiki/O_Rei_Le%C3%A3o"><img src="./assets/The-lion-king.jpg" alt="The-lion-king" title="The lion king"></a>
+                    <a href="https://pt.wikipedia.org/wiki/The_Tigger_Movie"><img src="./assets/Tiger-the-movie.jpg" alt="Tiger-the-movie" title="Tiger the movie"></a>
+                    <a href="https://pt.wikipedia.org/wiki/Finding_Nemo"><img src="./assets/Finding nemo.jpg" alt="Aladdin" title="Aladdin e os 40 ladrões"></a>
+                    <a href="https://pt.wikipedia.org/wiki/The_Incredibles"><img src="./assets/The incredibles.jpg" alt="Life-with-mikey" title="Life with Mikey"></a>
+                    <a href="https://pt.wikipedia.org/wiki/Toy_Story"><img src="./assets/Toy story.jpg" alt="Pokemon" title="Pokemon the first movie"></a>
+                    <a href="https://pt.wikipedia.org/wiki/WALL%C2%B7E"><img src="./assets/Wall-e.jpg" alt="The-lion-king" title="The lion king"></a>
+                    <a href="https://pt.wikipedia.org/wiki/Up_(filme)"><img src="./assets/Up.jpg" alt="Tiger-the-movie" title="Tiger the movie"></a>
                     <span class="prev" style="display: none;"><i class="fas fa-angle-left"></i></span>
                     <span class="next" style="display: none;"><i class="fas fa-angle-right"></i></span>
                 </div>
@@ -42,12 +50,27 @@
                     <p>Os Quarenta Ladrões chegam, liderados pelo pai de Aladim, cujo paradeiro era desconhecido. Surpreendido ao saber que o pai ainda está vivo, Aladim, ajudado pelo gênio da lâmpada, tenta salvá-lo quando ele começa a correr perigo.</p>
                     <small>Aventura / Infantil</small>
                     <small><strong>Duração: </strong>1hora e 21 minutos</small>
+                    <button>Alugar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/Aladdin.jpg" alt="Aladdin">
+                <div class="synopsis">
+                    <h4>Aladdin e os 40 ladrões</h4>
+                    <span>L</span>
+                    <p>Os Quarenta Ladrões chegam, liderados pelo pai de Aladim, cujo paradeiro era desconhecido. Surpreendido ao saber que o pai ainda está vivo, Aladim, ajudado pelo gênio da lâmpada, tenta salvá-lo quando ele começa a correr perigo.</p>
+                    <small>Aventura / Infantil</small>
+                    <small><strong>Duração: </strong>1hora e 21 minutos</small>
+                    <button>Alugar</button>
                 </div>
             </div>
         </section>
         <footer class="footer-container">
             <p>Lunar Film &copy;</p>
+            <p>By Marcelo Chaves &male;</p>
         </footer>
+        <button  id="btn-top"><i class="fas fa-arrow-up"></i></button>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
