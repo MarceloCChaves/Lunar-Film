@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -16,13 +19,36 @@ header{
     background: -webkit-linear-gradient(to bottom, #e94057,  #c31432);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #e94057, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+header .navbar{
+   width: 100%;
+   padding: 2rem 0 0;
+}
+.navbar li{
+    list-style-type: none;
+    background: #242a2c;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #586165;
+    font-size: 0.875em;
+    font-weight: 600;
+    display: block;
+    padding: 1.55em 0;
+    transition: 0.5s ease;
+}
+.navbar a:hover{
+    color: #E50914;
+}
 header .title{
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem;
     transition: 0.3s ease-in-out;
-
+    text-align: center;
 }
 header .title:hover{
     opacity: 0.8;
@@ -31,7 +57,7 @@ header .description{
     color: #fff;
     font-weight: 700;
     margin-top: 0.5rem;
-    border-bottom: 2px solid #fff;
+    text-align: center;
 }
 .featured-films{
     background: #c31432;  /* fallback for old browsers */
@@ -56,17 +82,20 @@ header .description{
     width: 100%;
     padding: 2rem;
 }
-.slideshow figure{
+.slideshow a{
     display: inline-block;
     padding: 5rem 0 0;
 }
-.slideshow figure img:hover{
+.slideshow a img:hover{
     filter:grayscale(100%);
     transition: 1s;
     box-shadow: 10px 10px 60px #cccccc;
+    cursor: pointer;
 }
 .catalog-films{
     background: #2C0C36;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .catalog-films .card{
     display: flex;
@@ -87,9 +116,10 @@ header .description{
 .synopsis p{
     margin-top: 2rem;
 }
-.synopsis small + small{
-    display: inline-block;
+.synopsis small{
+    display: block;
     margin: 1rem;
+    letter-spacing: 2px;
 }
 .synopsis h4{
     display: inline-block;
@@ -100,18 +130,67 @@ header .description{
     padding: 1em;
     border-radius: 0.25rem;
 }
+.synopsis button{
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background: #4285F4;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 0.5rem;
+    transition: 0.2s linear;
+}
+.synopsis button:hover{
+    opacity: 0.8;
+}
 footer{
     background: #23084D;
     padding: 2rem 0 4rem;
     text-align: center;
     color: white;
 }
-
+#btn-top{
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #fff;
+    background: #8DC84B;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    outline: none;
+    cursor: pointer;
+}
 @media (max-width: 1024px){
     .featured-films{
         padding: 4rem 0 8rem;
     }
     h3{
         font-size: 4rem;
+    }
+}
+@media (min-width: 1024px){
+    header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header .navbar li{
+        background: transparent;
+        border: none;
+    }
+    header .navbar a{
+        color: white;
+    }
+    header .navbar a:hover{
+        color: white;
+        opacity: 0.6;
     }
 }
