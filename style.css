@@ -171,6 +171,19 @@ footer{
     h3{
         font-size: 4rem;
     }
+    .catalog-films{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .synopsis h4{
+        font-size: 1.75rem;
+    }
+    .synopsis p{
+        font-size: 1.25rem;
+    }
+    .synopsis span{
+        position: absolute;
+    }
 }
 @media (min-width: 1024px){
     header{
